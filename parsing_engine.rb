@@ -64,38 +64,6 @@ class ParsingEngine
       $string_builder << new_key if new_key.class != Array
     end
     return $string_builder
-    puts "sdsds"
-    # if int != 0 && int < 4
-    #   key = 'I'*int 
-    #   least_diff = 0
-    # elsif int == 8 
-    #   key = 'V'    ## This is done to convert to VIII instead of IIX
-    #   least_diff = 3
-    # else
-    #   ## get the key of value that gives least diff. Eg: for 900, least diff is 100 and given by minuend 1000 (key M)
-    #   if int in ROMAN_NUMBERS.values
-    #     return ROMAN_NUMBERS.keys[ROMAN_NUMBERS.values.find_index(500)]
-    #   x, y = findXY(int)
-    #   least_diff = ROMAN_NUMBERS.values.map{|v| (v - int).abs}.min
-    #   key = ROMAN_NUMBERS.map{|k,v| k if v == (least_diff + int)}.compact.last
-    #   key = ROMAN_NUMBERS.map{|k,v| k if v == (int - least_diff).abs}.compact.last if key.nil? ## eg. for 6, least_diff + int = 7, so key is nil
-    # end
-
-    # if least_diff != 0 && !key.nil?
-    #   next_key = (get_roman least_diff)
-    #   if ROMAN_NUMBERS[key] <= int
-    #     $string_builder << key if key.class == String
-    #     $string_builder << next_key if next_key.class == String
-    #   else
-    #     $string_builder << next_key if next_key.class == String
-    #     $string_builder << key if key.class == String
-    #   end
-    #   return $string_builder
-    # else
-    #   $string_builder.size == 0 ? (return key) : (return $string_builder)
-    # end
-    # $string_builder_final = $string_builder.flatten
-    # return $string_builder_final.join('')
   end
 
   def find_remender(int)
